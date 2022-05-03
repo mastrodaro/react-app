@@ -21,6 +21,10 @@ const navigation = [
     state: "string value passed with state",
   },
   {
+    name: "Page with programmatic navigation",
+    to: "page-programmatic-navigation",
+  },
+  {
     name: "Page lazy loading",
     to: "page-lazy-load",
   },
