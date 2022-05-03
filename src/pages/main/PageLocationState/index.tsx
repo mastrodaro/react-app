@@ -7,6 +7,8 @@ const PageLocationState = () => {
     <div>
       <h3>Section with location state</h3>
       <p>Param passed with state: {location.state as string}</p>
+      <p>Location object:</p>
+      <pre>{JSON.stringify(location)}</pre>
     </div>
   );
 };

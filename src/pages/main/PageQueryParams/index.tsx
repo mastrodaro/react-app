@@ -1,23 +1,25 @@
-import { useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
+import React from "react";
 
 const PageQueryParams = () => {
-  const [urlSearchParams] = useSearchParams();
+  const [searchParams /*, setSearchParams*/] = useSearchParams();
+  const location = useLocation();
   return (
     <div>
       <h3>Section with query params</h3>
-      <p>queryString: {urlSearchParams.toString()}</p>
+      <p>queryString: {searchParams.toString()}</p>
       <p>params:</p>
       <ul>
-        {Array.from(urlSearchParams).map(([key, value]) => (
+        {Array.from(searchParams).map(([key, value]) => (
           <li key={key}>
             {key}: {value} (type={typeof value})
           </li>
         ))}
       </ul>
+      <p>Location object:</p>
+      <pre>{JSON.stringify(location)}</pre>
     </div>
   );
 };
 
 export default PageQueryParams;
-
-//TODO 404, nav programitically
