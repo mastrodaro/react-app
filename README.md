@@ -6,6 +6,7 @@
   * eslint
 * typescript
 * router
+* redux
 
 Project bootstrapped with create-react-app (CRA)
 
@@ -21,6 +22,9 @@ By default all dependencies are primary. Restructured to:
   * web-vitals
 * router
   * react-router-dom
+* redux
+  * @reduxjs/toolkit
+  * react-redux
 
 theming:
 https://medium.com/@dmitriy.borodiy/easy-color-theming-with-scss-bc38fd5734d1

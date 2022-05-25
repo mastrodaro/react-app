@@ -11,6 +11,7 @@ import PageLocationState from "@/pages/main/PageLocationState";
 import React from "react";
 import PageNotFound from "@/pages/main/PageNotFound";
 import PageProgrammaticNavigation from "@/pages/main/PageProgrammaticNavigation";
+import PageStateManagement from "@/pages/main/PageStateManagement";
 
 const PageLazyLoad = React.lazy(() => import("@/pages/main/PageLazyLoad"));
 
@@ -62,6 +63,10 @@ const routes: RouteObject[] = [
             <PageLazyLoad />
           </React.Suspense>
         ),
+      },
+      {
+        path: "state-management",
+        element: <PageStateManagement />,
       },
       {
         path: "*",
