@@ -28,6 +28,10 @@ const navigation = [
     name: "Page lazy loading",
     to: "page-lazy-load",
   },
+  {
+    name: "State Management",
+    to: "state-management",
+  },
 ];
 
 const MainNavigation = () => {
