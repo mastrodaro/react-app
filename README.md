@@ -28,7 +28,7 @@ By default all dependencies are primary. Restructured to:
 
 theming:
 https://medium.com/@dmitriy.borodiy/easy-color-theming-with-scss-bc38fd5734d1
-
+https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/
 
 ## devDependencies history
 
@@ -53,3 +53,19 @@ https://medium.com/@dmitriy.borodiy/easy-color-theming-with-scss-bc38fd5734d1
   * sass
 * router
   * @types/react-router-dom
+
+|                           | redux toolkit                  | mobx                                                         |
+|---------------------------|--------------------------------|--------------------------------------------------------------|
+| Github stars              | redux - 58.1k, toolkit - 7.8k  | 25.3k                                                        |
+| Dependencies to project   | 2                              | 2                                                            |
+| Coding style              | functional                     | preferable classes                                           |
+| Code style strictness     | opinionated                    | free (many ways to achieve the same goal)                    |
+| Store structure           | one store sliced into reducers | many autonomous stores (communication via RootStore pattern) |
+ | Unit testing covered      | 67% (only reducers)            | 92% statements                                               |
+| Debugging                 | redux tools (good)             | MobX tools (bad)                                             |
+| Mutability                | immutable                      | mutable                                                      |
+| Complexity                | simple                         | simple                                                       |
+| Amount of boilerplate     | low                            | low                                                          |
+| Pure function reducers    | true                           | false                                                        |
+| Require additional config | no                             | tsconfig "useDefineForClassFields": true                     |
+| Additional features       | RTK Query                      | Computed, Reactions                                          |
