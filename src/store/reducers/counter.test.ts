@@ -4,7 +4,7 @@ import counterReducer, {
   increment,
   incrementAsync,
   incrementByValue,
-} from "@/features/counterSlice";
+} from "@/store/reducers/counter";
 
 describe("Counter reducer", () => {
   const initialState: CounterState = {

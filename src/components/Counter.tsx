@@ -1,11 +1,11 @@
-import { useAppDispatch, useAppSelector } from "@/app/hooks";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import {
   decrement,
   increment,
   incrementAsync,
   incrementByValue,
   incrementAsyncManual,
-} from "@/features/counterSlice";
+} from "@/store/reducers/counter";
 import { useRef } from "react";
 
 const Counter = (): JSX.Element => {

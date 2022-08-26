@@ -25,9 +25,12 @@ By default all dependencies are primary. Restructured to:
 * redux
   * @reduxjs/toolkit
   * react-redux
+  * redux-persist
+  * RTK Query
 
 theming:
 https://medium.com/@dmitriy.borodiy/easy-color-theming-with-scss-bc38fd5734d1
+https://css-tricks.com/easy-dark-mode-and-multiple-color-themes-in-react/
 
 
 ## devDependencies history

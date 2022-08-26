@@ -6,7 +6,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "test:coverage": "craco test --coverage",
+    "test:coverage": "craco test --watchAll --coverage",
     "lint": "eslint .",
     "eject": "react-scripts eject"
   },
@@ -16,6 +16,7 @@
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.1",
     "react-router-dom": "^6.3.0",
+    "redux-persist": "^6.0.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {

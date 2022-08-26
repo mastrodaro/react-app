@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { fetchIncrement } from "@/services/increment";
-import { AppThunk } from "@/app/store";
+import { AppThunk } from "@/store";
 
 export interface CounterState {
   value: number;
@@ -27,7 +27,7 @@ export const incrementAsyncManual =
   };
 
 /// why export this?
-export const counterSlice = createSlice({
+export const counter = createSlice({
   name: "counter",
   initialState,
   reducers: {
@@ -48,6 +48,6 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByValue } = counterSlice.actions;
+export const { increment, decrement, incrementByValue } = counter.actions;
 
-export default counterSlice.reducer;
+export default counter.reducer;

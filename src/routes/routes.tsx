@@ -39,10 +39,12 @@ const routes: RouteObject[] = [
       {
         path: "page-path-params",
         element: <PagePathParams />,
-      },
-      {
-        path: "page-path-params/:id",
-        element: <PathParamsDetails />,
+        children: [
+          {
+            path: ":id",
+            element: <PathParamsDetails />,
+          },
+        ],
       },
       {
         path: "page-query-params",
